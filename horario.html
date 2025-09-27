@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horario 2º SMX</title>
+    <link rel="icon" type="image/png" href="icono.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            text-align: center;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        th {
+            background-color: #ddd;
+        }
+        caption {
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        .modulo { background-color: #b3e5fc; }
+        .optativo { background-color: #c8e6c9; }
+        .itinerario { background-color: #ffcdd2; }
+        .aplicaciones { background-color: #e1bee7; }
+        .recreo { background-color: #ffeb3b; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <h1>Mi Horario de Clases</h1>
+
+    <ul>
+        <li><a href="#horario">Horario</a></li>
+        <li><a href="#imagenes">Imágenes</a></li>
+        <li><a href="#video">Vídeo</a></li>
+        <li><a href="#mapa">Mapa</a></li>
+    </ul>
+
+    <h2 id="horario">Horario de 2º SMX</h2>
+    <table>
+        <caption>Horario de Clases - Curso 2025/2026</caption>
+        <tr>
+            <th>Hora</th>
+            <th>Lunes</th>
+            <th>Martes</th>
+            <th>Miércoles</th>
+            <th>Jueves</th>
+            <th>Viernes</th>
+        </tr>
+        <tr>
+            <th>8:00 - 8:55</th>
+            <td rowspan="2" class="modulo">Sistemas operativos</td>
+            <td rowspan="2" class="modulo">Servicios en red</td>
+            <td rowspan="2" class="modulo">Seguridad informática</td>
+            <td rowspan="2" class="aplicaciones">Sostenibilidad aplic.</td>
+            <td rowspan="2" class="optativo">Módulo optativo</td>
+        </tr>
+        <tr><th>8:55 - 9:50</th></tr>
+
+        <tr>
+            <th>9:50 - 10:45</th>
+            <td colspan="5" class="recreo">RECREO</td>
+        </tr>
+
+        <tr>
+            <th>11:10 - 12:05</th>
+            <td class="optativo">Módulo optativo</td>
+            <td rowspan="2" class="modulo">Seguridad informática</td>
+            <td class="optativo">Módulo optativo</td>
+            <td rowspan="2" class="modulo">Servicios en red</td>
+            <td rowspan="2" class="modulo">Proyecto intermodular</td>
+        </tr>
+        <tr>
+            <th>12:05 - 13:00</th>
+            <td class="itinerario">Itinerario personal</td>
+            <td rowspan="2" class="modulo">Sistemas operativos</td>
+        </tr>
+        <tr>
+            <th>13:00 - 13:55</th>
+            <td class="modulo">Digitalización aplic.</td>
+            <td class="itinerario">Itinerario personal</td>
+            <td class="aplicaciones">Aplicaciones web</td>
+            <td rowspan="2" class="modulo">Servicios en red</td>
+        </tr>
+        <tr>
+            <th>14:15 - 15:10</th>
+            <td colspan="4">---</td>
+        </tr>
+    </table>
+
+    <h2 id="imagenes">Imágenes</h2>
+    <p>Foto de ejemplo relacionada con informática:</p>
+    <img src="informatica.jpg" alt="Imagen informática" width="300">
+
+    <h2 id="video">Vídeo</h2>
+    <iframe width="560" height="315" 
+        src="https://youtu.be/as1opL254NA?si=jZNv1UrcIZohC0YI" 
+        title="Video YT" 
+        frameborder="0" 
+        allowfullscreen>
+    </iframe>
+
+    <h2 id="mapa">Mapa del Instituto</h2>
+    <iframe 
+        src="http://aplicaciones.edu.gva.es/abc/i_guiadecentros/es/mapa.asp?codi=46018692" 
+        width="600" 
+        height="450" 
+        style="border:0;" 
+        allowfullscreen 
+        loading="lazy">
+    </iframe>
+
+</body>
+</html>
